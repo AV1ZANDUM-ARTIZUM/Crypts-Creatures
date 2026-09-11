@@ -16,7 +16,8 @@
 <h2>⚔️ Create Your Adventurer</h2>
 <p>Choose a class and enter a world of monsters, quests, bosses, treasure, companions and secrets.</p>
 <div class="classes" id="classes"></div>
-<button id="startBtn" disabled>Enter the Realm</button>
+<div class="startActions"><button id="startBtn" disabled>Enter the Realm</button><button id="continueBtn" class="hidden">📂 Continue Saved Game</button></div>
+<p id="controlsHint" class="controlsHint">🎮 Combat: 1 Attack · 2 Ability · 3 Potion · 4 Bomb · 5 Defend · 6 Flee</p>
 </section>
 <section id="game" class="hidden">
 <div class="hud panel"><div class="hudHero"><div id="heroArt"></div><div><b id="heroName"></b><span id="heroClass"></span></div></div><div>❤️ <span id="hp"></span> &nbsp; ⭐ Lv.<span id="level"></span> &nbsp; XP <span id="xp"></span></div></div>
@@ -33,5 +34,6 @@
 <script src="expansion.js"></script>
 <script src="mega.js"></script>
 <script src="artplus.js"></script>
+<script src="playable.js"></script>
 </body>
 </html>
