@@ -19,9 +19,9 @@
 <button id="startBtn" disabled>Enter the Realm</button>
 </section>
 <section id="game" class="hidden">
-<div class="hud panel"><div><b id="heroName"></b><span id="heroClass"></span></div><div>❤️ <span id="hp"></span> &nbsp; ⭐ Lv.<span id="level"></span> &nbsp; XP <span id="xp"></span></div></div>
+<div class="hud panel"><div class="hudHero"><div id="heroArt"></div><div><b id="heroName"></b><span id="heroClass"></span></div></div><div>❤️ <span id="hp"></span> &nbsp; ⭐ Lv.<span id="level"></span> &nbsp; XP <span id="xp"></span></div></div>
 <div class="world">
-<aside class="panel"><h3>Adventure</h3><button data-action="town">🏘️ Town</button><button data-action="crypt">☠️ Crypt</button><button data-action="wilds">🌲 Wilds</button><button data-action="guild">📜 Guild</button><button data-action="shop">⚒️ Market</button><button data-action="inventory">🎒 Inventory</button><button data-action="character">📊 Character</button></aside>
+<aside class="panel"><h3>Adventure</h3><button data-action="town">🏘️ Town</button><button data-action="crypt">☠️ Crypt</button><button data-action="wilds">🌲 Wilds</button><button data-action="guild">📜 Guild</button><button data-action="shop">⚒️ Market</button><button data-action="inventory">🎒 Inventory</button><button data-action="character">📊 Character</button><button onclick="worldMap()">🗺️ World Map</button></aside>
 <section class="panel" id="scene"></section>
 <aside class="panel" id="log"><h3>📖 Adventure Log</h3></aside>
 </div>
@@ -31,5 +31,6 @@
 <script src="game.js"></script>
 <script src="characters.js"></script>
 <script src="expansion.js"></script>
+<script src="mega.js"></script>
 </body>
 </html>
